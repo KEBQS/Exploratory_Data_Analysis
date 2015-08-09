@@ -11,7 +11,6 @@ rm(datasetHPC)
 ##Converting date/time
 dsFeb2007$Date <- as.Date(dsFeb2007$Date, format="%d/%m/%Y")
 dsFeb2007$Time <- strptime(dsFeb2007$Time, "%H:%M:%S", tz = "")
-##dsFeb2007$Time <- as.POSIXct(dsFeb2007$Time)
 
 ##Building Plot 1
 hist(dsFeb2007$Global_active_power, main="Global Active Power", 
